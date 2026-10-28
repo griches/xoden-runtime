@@ -1,0 +1,62 @@
+{
+  "mirror": "https://github.com/griches/xoden-runtime",
+  "upstream_release": "https://github.com/leolobato/playden-ps5/releases/tag/v0.7.2",
+  "upstream_tag": "v0.7.2",
+  "kit_id": "playden-kit",
+  "kit_revision": "0.13",
+  "manifest_sha256": "d1dbc8e1b5b98691950369a89ef87c1dff5b7064a31844ccf20a4bed99b0e55b",
+  "assets": [
+    {
+      "name": "playden-kit-0.13.zip",
+      "url": "https://github.com/leolobato/playden-ps5/releases/download/v0.7.2/playden-kit-0.13.zip",
+      "size": 429631275,
+      "digest": "sha256:6d58e72112c8e5d8ab0a4872f53cdbefb63adc436d366201cd02e704f74482b5"
+    },
+    {
+      "name": "playden-update.json",
+      "url": "https://github.com/leolobato/playden-ps5/releases/download/v0.7.2/playden-update.json",
+      "size": 549,
+      "digest": "sha256:1bcd23cbd5d9fb7a552e13d7f8266fa172144e0eae736256f6dd0a36692c5039"
+    }
+  ],
+  "sources": {
+    "dxvk": {
+      "archive_sha256": "17761876556afd55736cb895d184f5a1c55d43350f1b1e3b129f8d28706d7992",
+      "url": "https://github.com/doitsujin/dxvk/releases/tag/v2.6.2",
+      "version": "2.6.2"
+    },
+    "foundation": {
+      "revision": "9c0b994a048521af6fb84c73ded364504fe250e9",
+      "url": "https://github.com/mpereiraesaa/ps5-native-app-boilerplate.git"
+    },
+    "helper": {
+      "base_revision": "b48b7d7236eca25c7b9dfd6c040c763ae05dde80",
+      "revision": "66ab4f10f9a6c6a5a42d05f1d165230c13ae2ab7",
+      "url": "https://github.com/leolobato/PS5-Lapy-JB-Daemon.git"
+    },
+    "media": {
+      "playback_verified": false,
+      "registry_idl_sha256": "6eee87c48d308eaf37de042c58c803cb0d48436f7e203bb06630b6e1e7e9f3c5",
+      "wine_commit": "490f6d5dcbb2a5047345b8af88d114bbcaad69a8"
+    },
+    "mono": {
+      "archive_sha256": "54a1b0111c3fe4b785eae688af94d27e64995707ad648b6fee8000381b80d298",
+      "url": "https://dl.winehq.org/wine/wine-mono/11.3.0/wine-mono-11.3.0-x86.tar.xz",
+      "version": "11.3.0"
+    },
+    "sdk": {
+      "url": "https://github.com/ps5-payload-dev/sdk/releases/tag/v0.42",
+      "version": "0.42"
+    },
+    "wine": {
+      "revision": "031302d2a713b3793c77e18f42ee0778e48d93a3",
+      "url": "https://github.com/leolobato/prospero-win.git"
+    },
+    "wrapper": {
+      "baseline_revision": "54caac176e86c60c7c407972583b491f67838ed9",
+      "revision": "ce289425bb34acbcc98f77b4e00ac98b3c16e4bc",
+      "url": "https://github.com/leolobato/prospero-win.git"
+    }
+  },
+  "changes": "None. Both release assets are byte-for-byte upstream copies."
+}
