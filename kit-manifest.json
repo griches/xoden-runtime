@@ -26036,8 +26036,8 @@
     {
       "mode": "0755",
       "path": "titles/any-title-ce28942/eboot.bin",
-      "sha256": "10fc130547881d917aabf63ec1f137b04e70c215e7230607fafd364b715ec187",
-      "size": 207289
+      "sha256": "8be859d5b86ae1cf285771725085d0c77a572ae8aaef52a1820786c4c96edf3c",
+      "size": 207625
     },
     {
       "mode": "0644",
@@ -26072,7 +26072,7 @@
     {
       "mode": "0644",
       "path": "titles/any-title-ce28942/native-title-build.json",
-      "sha256": "da672d7851183072ec58c866c5db948326d407d3322d39c4ba24eb0b6155d650",
+      "sha256": "b346471d3710207a2b166d67d9b89d23e7939f3c7c0f8a6c043ee776e5751c70",
       "size": 576
     },
     {
@@ -26124,7 +26124,7 @@
       "size": 164352
     }
   ],
-  "files_sha256": "1e51857d8e19813b33cfaace0260f139b8835770a6ef5fe0d291270c77b446ca",
+  "files_sha256": "aeb5f27b49dd38c6640fa06a5072e591b7a104afb145f75f908e5735e68dc708",
   "firmware": [
     "13.60"
   ],
@@ -26186,9 +26186,10 @@
       "url": "https://github.com/leolobato/prospero-win.git"
     },
     "wrapper": {
+      "base_revision": "ce289425bb34acbcc98f77b4e00ac98b3c16e4bc",
       "baseline_revision": "54caac176e86c60c7c407972583b491f67838ed9",
-      "revision": "ce289425bb34acbcc98f77b4e00ac98b3c16e4bc",
-      "url": "https://github.com/leolobato/prospero-win.git"
+      "revision": "ffd297dbe7249763bff5f1daaa1c9f9074131eec",
+      "url": "https://github.com/griches/xoden-runtime/releases/download/v0.13.1/xoden-runtime-shell-source.tar.gz"
     }
   },
   "template": {
@@ -26205,7 +26206,7 @@
       "native_build_manifest": "titles/any-title-ce28942/native-title-build.json",
       "path": "titles/any-title-ce28942",
       "title_id": "FAKE78000",
-      "wrapper_revision": "ce289425bb34acbcc98f77b4e00ac98b3c16e4bc"
+      "wrapper_revision": "ffd297dbe7249763bff5f1daaa1c9f9074131eec"
     }
   ]
 }

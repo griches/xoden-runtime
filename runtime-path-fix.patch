@@ -1,0 +1,35 @@
+From ffd297dbe7249763bff5f1daaa1c9f9074131eec Mon Sep 17 00:00:00 2001
+From: Gary Riches <gary@bouncingball.mobi>
+Date: Wed, 28 Oct 2026 11:36:23 +0000
+Subject: [PATCH] fix: resolve managed runtime from its title source after root
+ grant
+
+---
+ native/wine64_main.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/native/wine64_main.c b/native/wine64_main.c
+index 3bf08c9..fc39835 100644
+--- a/native/wine64_main.c
++++ b/native/wine64_main.c
+@@ -106,7 +106,8 @@ static int kernel_title_id(char *title, size_t size)
+ /* Its 64-bit PE modules, among them the WoW64 CPU backends. */
+ #define PW_WINE64_PE_RUNTIME "/win/wine/lib/wine/x86_64-windows"
+ static char sandbox_app0[sizeof("/mnt/sandbox/_000/app0") + PW_TITLE_ID_SIZE];
+-static const char *const runtime_roots[] = { "/app0", sandbox_app0 };
++static char source_app0[sizeof("/data/homebrew/") + PW_TITLE_ID_SIZE];
++static const char *const runtime_roots[] = { "/app0", sandbox_app0, source_app0 };
+ /* The title's data: profiles/, input/, prefix/ and prefixes/<name>. */
+ #define PW_WINE64_ROOT_DATA "/data/prospero-win"            /* when /data is granted */
+ #define PW_WINE64_ROOT_SANDBOX "/download0/prospero-win"    /* sandbox fallback */
+@@ -1314,6 +1315,7 @@ int main(int argc, char **argv)
+ 
+     if (title_from_kernel < 0) return 1;
+     snprintf(sandbox_app0, sizeof(sandbox_app0), "/mnt/sandbox/%s_000/app0", title_id);
++    snprintf(source_app0, sizeof(source_app0), "/data/homebrew/%s", title_id);
+ #if PW_TITLE_PROBE
+     return title_probe();
+ #endif
+-- 
+2.54.0 (Apple Git-157)
+

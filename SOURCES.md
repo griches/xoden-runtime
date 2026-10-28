@@ -1,7 +1,6 @@
-# Kit 0.13 sources
+# Kit 0.13.1 sources
 
-Every binary in this kit is built from, or taken unmodified from, the sources below. My changes are on the
-`main` branch of each `leolobato` fork. The build scripts are in Playden's `tools/kit-h/`.
+The upstream kit 0.13 source inventory is reproduced below. XoDen rebuilt only the native title shell from prospero-win `ce289425bb34acbcc98f77b4e00ac98b3c16e4bc` plus `runtime-path-fix.patch`, producing commit `ffd297dbe7249763bff5f1daaa1c9f9074131eec`. The release provides the full shell source archive and exact Git commit bundle. Foundation remains `9c0b994a048521af6fb84c73ded364504fe250e9`; SDK v0.42 and the original helper/libc were used. All other binaries are unchanged. The original build scripts are in Playden's `tools/kit-h/`.
 
 | Component | Revision | Source | License text |
 | --- | --- | --- | --- |
@@ -32,4 +31,4 @@ Every binary in this kit is built from, or taken unmodified from, the sources be
 The media components' exact source archives, their SHA-256 and the static archives linked into `winegstreamer.prx` are
 listed in the kit at `runtime/wine-wow64/031302d-kit-0.13/share/wine/licenses/media/source-manifest.json`.
 
-If a link stops working, open an issue on https://github.com/leolobato/playden-ps5 and I will provide the source.
+For this XoDen runtime release, report source availability issues at https://github.com/griches/xoden-runtime/issues. Upstream projects are independent of XoDen support.
